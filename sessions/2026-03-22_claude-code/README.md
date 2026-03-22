@@ -26,8 +26,7 @@ and demonstrate real workflows in a live terminal session.
 The notebook walks through setup and examples step by step:
 
 ```bash
-pip install jupyter
-jupyter notebook notebook.ipynb
+uv run jupyter notebook notebook.ipynb
 ```
 
 For the live demo scripts:

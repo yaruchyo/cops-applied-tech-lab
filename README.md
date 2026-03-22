@@ -38,7 +38,7 @@ cops-applied-tech-lab/
 │       │   ├── slides.pdf
 │       │   ├── demo/
 │       │   │   └── ...
-│       │   └── requirements.txt        # if extra deps are needed
+│       │   └── requirements.txt        # optional, for extra deps
 │       └── another-presenter/
 │           └── ...
 ```
@@ -73,7 +73,7 @@ Place any of the following inside your folder:
 | Scripts | `*.py`, `*.sh` |
 | Demo apps | `demo/` subfolder with its own README |
 | Data files | Small datasets only (<10 MB). Use links for large files |
-| Dependencies | `requirements.txt` for any extra Python packages |
+| Dependencies | Add to `pyproject.toml` or use a local `requirements.txt` |
 
 ### 4. Add a short README in your folder
 
@@ -119,14 +119,11 @@ Then open a Merge Request to `main`.
 ## Setup
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt  # if exists
+uv sync
 ```
 
 For Jupyter notebooks:
 
 ```bash
-pip install jupyter
-jupyter notebook
+uv run jupyter notebook
 ```

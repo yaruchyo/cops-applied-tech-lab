@@ -29,8 +29,7 @@ where we build a FastAPI app from an empty folder using only Claude Code.
 The notebook walks through all topics as a presentation:
 
 ```bash
-pip install jupyter
-jupyter notebook notebook.ipynb
+uv run jupyter notebook notebook.ipynb
 ```
 
 For the live demo:
