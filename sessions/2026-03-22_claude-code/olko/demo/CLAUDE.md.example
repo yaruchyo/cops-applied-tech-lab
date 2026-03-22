@@ -1,0 +1,24 @@
+# Project Instructions for Claude Code
+
+## Code Style
+- Use ES modules (import/export), not CommonJS (require)
+- Use 2-space indentation
+- Prefer TypeScript over JavaScript
+
+## Workflow
+- Run `npm run lint` after editing code
+- Run `npm test -- --related` before committing
+- Write commit messages in conventional commits format
+
+## Architecture
+- API handlers live in `src/api/handlers/`
+- Shared utilities go in `src/lib/`
+- Tests mirror the source tree under `tests/`
+
+## Common Commands
+```bash
+npm run dev          # start dev server
+npm run test         # run test suite
+npm run lint         # lint and format
+npm run build        # production build
+```
