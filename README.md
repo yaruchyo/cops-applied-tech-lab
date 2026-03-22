@@ -116,6 +116,20 @@ Then open a Merge Request to `main`.
 | Branch name | `session/YYYY-MM-DD-your-name` | `session/2026-03-25-oleksii-y` |
 | Commit message | `Add session YYYY-MM-DD: topic by name` | `Add session 2026-03-25: rag-pipelines by oleksii-y` |
 
+## Prerequisites
+
+Install [uv](https://docs.astral.sh/uv/) (macOS):
+
+```bash
+brew install uv
+```
+
+Or via the official installer:
+
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
 ## Setup
 
 ```bash
